@@ -104,6 +104,7 @@ const posts = (await getCollection("blog")).sort((b, a) => a.data.pubDate.valueO
                 <img class="heroImage" src="${data.goodies.goodie[i].img}" />
                 <div style="bottom: 30px; right:30px; display:flex; flex-direction: column; align-items: right; justify-content: right; position:absolute;">
                   <div class="title">
+                    ${data.goodies.goodie[i].icon}
                     ${data.goodies.goodie[i].title}
                   </div>
                   <div class="desc">${data.goodies.goodie[i].desc}</div>
